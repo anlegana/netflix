@@ -1,0 +1,117 @@
+p {
+  color: white;
+}
+
+.root_app {
+  background-color: black;
+}
+
+.playerContainer {
+  width: 100%;
+  height: 400px;
+  max-height: 400px;
+}
+
+.topControls {
+  position: absolute;
+  /* left: 70px; */
+  top: 10px;
+  display: flex;
+}
+
+.PlayArrowIcon {
+  color: white;
+}
+
+.pauseIcon {
+  color: white;
+}
+
+.minuteSeconds {
+  height: 10px;
+  max-height: 10px;
+}
+
+/* Styling the "Back to Browse " message */
+.messageGoBack {
+  color: white;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  padding-left: 10px;
+}
+/* Styling the arrow that is beside the Back to Brose message*/
+.arrowGoBack {
+  color: white;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  /*position: absolute;*/
+  /* bottom: 70px; */
+  /*left: 90px; */
+}
+
+.slider > button {
+  margin-left: 10px;
+}
+
+.fullscreenIcon {
+  color: grey;
+}
+
+.playControl {
+  color: grey;
+  top: 530px;
+}
+
+.bottomControls {
+  display: flex;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.volumeControls {
+  display: flex;
+  align-items: center;
+}
+
+.rewindIcon {
+  color: grey;
+}
+.forwardIcon {
+  color: grey;
+}
+.volumeOffIcon {
+  color: white;
+}
+.volumeUpIcon {
+  color: white;
+}
+.title {
+  color: white;
+  padding-left: 10px;
+}
+.episode {
+  color: grey;
+  padding-left: 10px;
+}
+.helpOutlineIcon {
+  color: white;
+}
+
+.skipNextIcon {
+  color: white;
+}
+.filterNoneIcon {
+  color: white;
+}
+.CommentIcon {
+  color: white;
+}
+.speedIcon {
+  color: white;
+}
