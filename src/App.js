@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect, setState, state } from "react";
 import ReactDom from "react-dom";
 import { findDOMNode } from "react-dom";
-
 import Typography from "@material-ui/core/Typography";
 import ReactPlayer from "react-player";
 import PlayArrowIcon from "@material-ui/icons/PlayArrow";
@@ -32,6 +31,7 @@ import {
   RateReviewSharp,
   RateReviewTwoTone,
 } from "@material-ui/icons";
+
 /*Main bar */
 const PrettoSlider = withStyles({
   root: {
@@ -75,7 +75,7 @@ function App() {
     //screenfull.toggle(findDOMNode(playerRef.current));
     screenfull.toggle(videoRef.current);
   };
-  /*play and pause functions and states*/
+  /*play and pause functions and the states*/
 
   const [state, setState] = useState({
     playing: true,
@@ -115,15 +115,6 @@ function App() {
     });
   };
 
-  /*{const handleVolumeSeekDown = (e, newValue) => {
-    setState({
-      ...state,
-      volume: parseFloat(newValue / 100),
-      muted: newValue === 0 ? true : false,
-    });
-  };
-  /*player rate function*/
-
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handlePopover = (event) => {
@@ -134,6 +125,7 @@ function App() {
     setAnchorEl(null);
   };
 
+  /*PlayBack rate*/
   const open = Boolean(anchorEl);
   const id = open ? "playbackRate-popover" : undefined;
 
@@ -237,7 +229,7 @@ function App() {
           alignContent="center"
           className="bottomControls controls"
         >
-          {/* Slider and time! */}
+          {/* Slider and curren /remaining time! */}
           <Grid item xs={12} className="slider">
             <PrettoSlider
               min={0}
@@ -261,17 +253,17 @@ function App() {
               </Typography>
             </Button>
           </Grid>
-          {/* PlayBtn */}
+          {/* Play pause Btn */}
           <Grid item xs={1}>
             <IconButton onClick={handlePlayPause}>
               {playing ? (
                 <PauseIcon className="pauseIcon" />
               ) : (
-                <PlayArrowIcon className="PlayArrowIcon" />
+                <PlayArrowIcon className="playArrowIcon" />
               )}
             </IconButton>
           </Grid>
-          {/* Reverse */}
+          {/* Backward button */}
           <Grid item xs={1}>
             <IconButton onClick={handleRewind}>
               <HistoryIcon className="rewindIcon" />
